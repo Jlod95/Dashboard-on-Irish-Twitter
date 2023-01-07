@@ -13,11 +13,8 @@ s3 = boto3.resource(
     aws_secret_access_key='leWPz2kMxEo1Ll8J27IijLPm1li7MzlWMT6K5lqw'
 )
 
-obj = s3.Bucket('sentproj').Object('df_tweets.csv').get()
-df_tweets = pd.read_csv(obj['Body'], index_col=0)
-
-obj = s3.Bucket('sentproj').Object('df_month.csv').get()
-df_month = pd.read_csv(obj['Body'], index_col=0)
+df_tweets = pd.read_csv(r'C:\Users\jlod9\OneDrive\Desktop\AI_Sentiment_Analysis\data\df_month.csvh')
+df_month = pd.read_csv(r'C:\Users\jlod9\OneDrive\Desktop\AI_Sentiment_Analysis\data\df_tweets.csv')
 
 
 # Create the Dash app
