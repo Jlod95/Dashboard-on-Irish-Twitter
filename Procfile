@@ -1,1 +1,0 @@
-web: waitress-serve --listen=*:8050 --host=local_host Dash_app:server
