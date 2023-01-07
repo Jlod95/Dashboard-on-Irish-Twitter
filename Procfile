@@ -1,1 +1,1 @@
-web: waitress-serve --host=localhost --port=8050 Dash_app:server
+web: waitress-serve Dash_app:server --host=localhost --port=8050
