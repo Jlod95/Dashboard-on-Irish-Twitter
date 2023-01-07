@@ -1,1 +1,1 @@
-web: waitress-serve --listen "*:$PORT" Dash_app:server
+web: waitress-serve --listen "*:$PORT" --trusted-proxy '*' --trusted-proxy-headers --log-untrusted-proxy-headers --clear-untrusted-proxy-headers --threads ${WEB_CONCURRENCY:-4} "*:$PORT" Dash_app:server
