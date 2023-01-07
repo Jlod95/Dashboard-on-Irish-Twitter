@@ -1,17 +1,9 @@
 
 import pandas as pd
-import boto3
 import dash
 import dash_bootstrap_components as dbc
 import pandas as pd
 from dash import dcc, Output, Input, dash_table, html
-
-s3 = boto3.resource(
-    service_name='sentproj',
-    region_name='eu-west-1',
-    aws_heraccess_key_id='AKIAVOQ2SFHQB52SUFHP',
-    aws_secret_access_key='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'
-)
 
 df_tweets = pd.read_csv(r'C:\Users\jlod9\OneDrive\Desktop\AI_Sentiment_Analysis\data\df_month.csvh')
 df_month = pd.read_csv(r'C:\Users\jlod9\OneDrive\Desktop\AI_Sentiment_Analysis\data\df_tweets.csv')
