@@ -1,1 +1,1 @@
-web: python Dash_app.py
+web: waitress-serve Dash_app:server
