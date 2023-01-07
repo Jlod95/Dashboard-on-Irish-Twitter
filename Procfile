@@ -1,0 +1,1 @@
+web: waitress-serve --listen=*:8050 Dash_app:server
