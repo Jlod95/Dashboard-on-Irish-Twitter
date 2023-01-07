@@ -1,1 +1,1 @@
-web: gunicorn Dash_app:server
+web: C:\Users\jlod9\AppData\Local\Programs\Python\Python310\Scripts\gunicorn Dash_app:server
