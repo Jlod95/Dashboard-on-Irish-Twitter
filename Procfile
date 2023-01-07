@@ -1,1 +1,1 @@
-web: python Dash_app.py
+web: waitress-serve --host=localhost --port=8050 Dash_app:server
