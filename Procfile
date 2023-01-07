@@ -1,1 +1,1 @@
-web: gunicorn -- workers=1 Dash_app:server
+web: gunicorn Dash_app server
