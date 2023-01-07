@@ -1,1 +1,1 @@
-web: gunicorn Dash_app:server
+web waitress-serve --port=8041 Dash_app:server
