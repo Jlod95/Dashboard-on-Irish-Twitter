@@ -5,7 +5,7 @@ import dash_bootstrap_components as dbc
 import pandas as pd
 from dash import dcc, Output, Input, dash_table, html
 
-df_tweets = pd.read_csv(r'C:\Users\jlod9\OneDrive\Desktop\AI_Sentiment_Analysis\data\df_month.csvh')
+df_tweets = pd.read_csv(r'C:\Users\jlod9\OneDrive\Desktop\AI_Sentiment_Analysis\data\df_month.csv')
 df_month = pd.read_csv(r'C:\Users\jlod9\OneDrive\Desktop\AI_Sentiment_Analysis\data\df_tweets.csv')
 
 
