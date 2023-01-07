@@ -1,1 +1,1 @@
-web: waitress-serve --listen "*:$PORT" Dash_app:sentpro
+web: waitress-serve --listen "*:$PORT" Dash_app:server
