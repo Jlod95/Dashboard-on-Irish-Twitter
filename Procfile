@@ -1,1 +1,1 @@
-web: waitress-serve --listen=*:8050 Dash_app.wgsi:server
+web: waitress-serve --listen=*:8050 --host=local_host Dash_app:server
