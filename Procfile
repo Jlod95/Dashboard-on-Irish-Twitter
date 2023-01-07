@@ -1,1 +1,2 @@
-web: C:\Users\jlod9\AppData\Local\Programs\Python\Python310\Scripts\gunicorn Dash_app:server
+release: python manage.py migrate
+web: Dash_app:server
