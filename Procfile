@@ -1,2 +1,1 @@
-release: python manage.py migrate
-web: gunicorn Dash_app.wsgi
+web: gunicorn Dash_app:app
