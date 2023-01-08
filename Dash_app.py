@@ -1,7 +1,6 @@
 import pandas as pd
 import dash
 import dash_bootstrap_components as dbc
-import pandas as pd
 from dash import dcc, Output, Input, dash_table, html
 
 df_tweets = pd.read_csv(r'df_tweets.csv')
