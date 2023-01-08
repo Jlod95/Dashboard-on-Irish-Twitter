@@ -4,9 +4,11 @@ import dash_bootstrap_components as dbc
 import pandas as pd
 from dash import dcc, Output, Input, dash_table, html
 
-df_month = pd.read_csv(r'C:\Users\jlod9\PycharmProjects\pythonProject2\df_month.csv')
-df_tweets = pd.read_csv(r'C:\Users\jlod9\PycharmProjects\pythonProject2\df_tweets.csv')
+url_tweets ='https://github.com/Jlod95/Irish_Twitter/blob/master/df_tweets.csv'
+df_tweets = pd.read_csv(url_tweets,sep=",")
 
+url_month = 'https://github.com/Jlod95/Irish_Twitter/blob/master/df_month.csv'
+df_month = pd.read_csv(url_month,sep=",")
 # Create the Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 server = app.server
