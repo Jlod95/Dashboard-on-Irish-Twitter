@@ -3,8 +3,8 @@ import dash
 import dash_bootstrap_components as dbc
 from dash import dcc, Output, Input, dash_table, html
 
-df_tweets = pd.read_csv(r"df_tweets.csv")
-df_month = pd.read_csv(r"df_month.csv")
+df_tweets = pd.read_csv(r"C:\Users\jlod9\PycharmProjects\pythonProject2\df_tweets.csv")
+df_month = pd.read_csv(r"C:\Users\jlod9\PycharmProjects\pythonProject2\df_month.csv")
 
 # Create the Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
