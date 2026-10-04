@@ -5,10 +5,10 @@ import pandas as pd
 from dash import dcc, Output, Input, dash_table, html
 
 url_tweets ='https://github.com/Jlod95/Irish_Twitter/blob/master/df_tweets.csv'
-df_tweets = pd.read_csv(url_tweets,sep=",")
+df_tweets = pd.read_csv('df_tweets.csv')
 
 url_month = 'https://github.com/Jlod95/Irish_Twitter/blob/master/df_month.csv'
-df_month = pd.read_csv(url_month,sep=",")
+df_month = pd.read_csv('df_month.csv')
 # Create the Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 server = app.server
